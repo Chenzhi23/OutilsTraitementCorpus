@@ -1,15 +1,14 @@
 # Cours Outils de traitement de corpus
 
 ## Tâche
-Développement d'un système de résumé automatique pour les articles de journaux et articles scientifiques traitant de l'acquisition de la première langue (L1) chez les enfants. Ce système vise à faciliter la compréhension et l'accès aux recherches en produisant des résumés informatifs et concis.
+Développement d'un système de résumé automatique pour les longs textes sur web, les articles de journaux traitant de l'acquisition du langage. Ce système vise à faciliter la compréhension et l'accès aux recherches en produisant des résumés informatifs et concis.
 
 ## Corpus
+https://huggingface.co/datasets/scientific_papers 
 Le corpus servira de base d'entraînement et de test pour le système de résumé automatique. Il sera défini par les critères suivants :
 
-- **Taille** : Un nombre de mots suffisant pour assurer la diversité et la représentativité des cas d'usage.
-- **Annotations** : Des annotations seront ajoutées pour indiquer les structures importantes dans le texte, facilitant ainsi la tâche de génération de résumé.
-- **Statut de la documentation** : Des procédures de documentation rigoureuses seront suivies pour garantir la transparence des méthodes de résumé.
-- **Stratégie d'échantillonnage et origine des textes** : Une stratégie d'échantillonnage équilibrée permettant d'obtenir une variété d'articles de différentes sources et de différents courants de recherche.
+- **Taille** : 156k rows
+- **Annotations** : article/texte et abstract/résumé et section_names
 - **Modalité** : Le focus sera mis sur les textes écrits en anglais et en français, pour refléter les besoins linguistiques du système.
 
 ## Langage
@@ -22,4 +21,4 @@ Le système de résumé automatique utilisera des modèles prédictifs avancés 
 Des techniques de traitement de langage naturel et d'apprentissage automatique seront employées pour entraîner le système à produire des résumés fiables et précis.
 
 ## Partage de Connaissances
-L'outil de résumé automatique sera une ressource précieuse pour les linguistes, les éducateurs et les chercheurs, facilitant l'accès aux connaissances sur l'acquisition du langage chez les enfants.
+L'outil de résumé automatique sera une ressource précieuse pour les linguistes, les éducateurs et les chercheurs, facilitant l'accès aux connaissances sur l'acquisition du langage.
