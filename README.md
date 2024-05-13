@@ -1,24 +1,33 @@
-# Cours Outils de traitement de corpus
+# Système de Classification Automatique de Contenus Vidéo YouTube
 
-## Tâche
-Développement d'un système de résumé automatique pour les longs textes sur web, les articles de journaux traitant de l'acquisition du langage. Ce système vise à faciliter la compréhension et l'accès aux recherches en produisant des résumés informatifs et concis.
+## Description du Projet
+Ce projet vise à développer un système automatique de classification de textes basé sur les descriptions de vidéos YouTube. L'objectif est de catégoriser automatiquement les vidéos en fonction de leur contenu descriptif, ce qui aidera les utilisateurs à trouver plus rapidement les types de vidéos qui les intéressent, tout en aidant les créateurs de contenu et les annonceurs à mieux cibler leur audience.
 
-## Corpus
-https://huggingface.co/datasets/scientific_papers 
-Le corpus servira de base d'entraînement et de test pour le système de résumé automatique. Il sera défini par les critères suivants :
+## Jeu de Données
+Les descriptions des vidéos seront récupérées via l'API YouTube Data, incluant le titre, la description, les tags, et d'autres métadonnées. Ces informations seront utilisées pour entraîner et tester le modèle de classification de texte.
 
-- **Taille** : 156k rows
-- **Annotations** : article/texte et abstract/résumé et section_names
-- **Modalité** : Le focus sera mis sur les textes écrits en anglais et en français, pour refléter les besoins linguistiques du système.
+- **Source des Données** : API YouTube Data
+- **Taille des Données** : Environ 100,000 descriptions de vidéos
+- **Champs des Données** :
+  - **ID Vidéo** : Identifiant unique de la vidéo
+  - **Titre** : Youtubeur
+  - **Description** : Description détaillée du contenu de la vidéo
+  - **Catégorie** : Catégorie attribuée manuellement en fonction du contenu de la vidéo
 
-## Langage
-Anglais et Français
+## Objectifs du Projet
+Classer automatiquement les vidéos dans des catégories prédéfinies telles que « Actualité », « Cuisine », « Maquillage », etc., en se basant sur le texte de leur description.
 
-## Applications Prédictives
-Le système de résumé automatique utilisera des modèles prédictifs avancés pour traiter et synthétiser les informations clés des textes originaux. Ce corpus pourra être utilisé pour entraîner des modèles d'intelligence artificielle à résumer automatiquement des textes académiques, ce qui pourra à terme aider les chercheurs à filtrer rapidement de grandes quantités de littérature scientifique.
+## Conception du Modèle
+- **Prétraitement** : Nettoyage des données textuelles, suppression des mots inutiles, ponctuation, normalisation du texte, etc.
+- **Extraction de caractéristiques** : Transformation du texte en vecteurs numériques à l'aide de méthodes telles que TF-IDF ou Word2Vec ou Sac de mots.
+- **Algorithmes de classification** : Expérimentation avec différents modèles d'apprentissage automatique tels que SVM (machines à vecteurs de support), forêts aléatoires, réseaux de neurones, etc.
+- **Évaluation du modèle** : Utilisation de métriques telles que la précision, le rappel, et le score F1 pour évaluer la performance du modèle.
 
-## Utilisation dans les Modèles
-Des techniques de traitement de langage naturel et d'apprentissage automatique seront employées pour entraîner le système à produire des résumés fiables et précis.
+## Applications
+- **Découverte de contenu** : Permettre aux utilisateurs de filtrer rapidement les vidéos par catégorie.
+- **Recommandation de contenu** : Améliorer la précision des systèmes de recommandation en proposant des contenus plus adaptés aux intérêts des utilisateurs.
+- **Ciblage publicitaire** : Aider les annonceurs à cibler plus précisément des types spécifiques de contenus vidéo, augmentant ainsi l'efficacité des campagnes publicitaires.
 
 ## Partage de Connaissances
-L'outil de résumé automatique sera une ressource précieuse pour les linguistes, les éducateurs et les chercheurs, facilitant l'accès aux connaissances sur l'acquisition du langage.
+À la fin du projet, le code source et les modèles pré-entraînés seront partagés sur GitHub, avec une documentation détaillée sur le processus de prétraitement des données, l'entraînement des modèles et l'évaluation des résultats.
+
