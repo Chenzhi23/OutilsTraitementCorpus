@@ -1,18 +1,25 @@
 # Système de Classification Automatique de Contenus Vidéo YouTube
 
-## Description du Projet
+## Description du Projet (Tâche)
 Ce projet vise à développer un système automatique de classification de textes basé sur les descriptions de vidéos YouTube. L'objectif est de catégoriser automatiquement les vidéos en fonction de leur contenu descriptif, ce qui aidera les utilisateurs à trouver plus rapidement les types de vidéos qui les intéressent, tout en aidant les créateurs de contenu et les annonceurs à mieux cibler leur audience.
 
 ## Jeu de Données
 Les descriptions des vidéos seront récupérées via l'API YouTube Data, incluant le titre, la description, les tags, et d'autres métadonnées. Ces informations seront utilisées pour entraîner et tester le modèle de classification de texte.
 
 - **Source des Données** : API YouTube Data
-- **Taille des Données** : Environ 100,000 descriptions de vidéos
+- **Taille des Données** : Environ 600 descriptions de vidéos issu de 600 vidéos de Youtube
+- **Train-test split** :
+  - **Train** : 420 descriptions (70%)
+  - **Test** : 180 description (30%)
 - **Champs des Données** :
   - **ID Vidéo** : Identifiant unique de la vidéo
   - **Titre** : Youtubeur
   - **Description** : Description détaillée du contenu de la vidéo
   - **Catégorie** : Catégorie attribuée manuellement en fonction du contenu de la vidéo
+
+
+## Langue
+Français
 
 ## Objectifs du Projet
 Classer automatiquement les vidéos dans des catégories prédéfinies telles que « Actualité », « Cuisine », « Maquillage », etc., en se basant sur le texte de leur description.
