@@ -20,7 +20,7 @@ def description_parser(channel_name: str, max_video_results: int, video_type: st
     """
     
     # Votre clé API YouTube
-    api_key = 'AIzaSyC25TKl-kwG6acsVviVisBskioHyf2pNSg'
+    api_key = ''
 
     # Création d'un client API pour communiquer avec YouTube
     youtube = build('youtube', 'v3', developerKey=api_key)
