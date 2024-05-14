@@ -13,6 +13,14 @@ configuration:
     test: 30%
 ---
 
+## Exemple de données
+
+| ID | Description | Catégorie |
+|----|-------------|----------|
+| 1  | dans les pyrénéesorientales, un nouveau départ de feu a ravagé 3 hectares et menacé plusieurs habitations avant dêtre fixé. toute lactualité en direct sur suiveznous sur les réseaux instagram facebook tiktok twitter | actualite |
+| 2  | le pire vs le meilleur mais... nouveau concept avec hugoposé et nico je teste le nouveau mcdo une arnaque activez la cloche de notification, pour être au courant de mes vidéos mes restaurants pepe chicken twitter fastgoodcuisine instagram fastgoodcuisine snapchat fastgoodcuisine facebook fastgoodcuisine merci à mathias pour la coupe de cheveux insta barber_factory 16 rue jules vallès, 75011 paris sponsorship contactfastgoodcuisine.com | cuisine |
+| 3  | rejoins moi tik tok le monde de salome instagram lemondedesalome contact professionnel uniquement lemondedesalomeytgmail.com vu dans la video je porte pull pimkie ancienne co jean claudie pierlot ancienne co montre apple watch se 40mm lunettes caroline abraam materiel video materiel video camera trepieds logiciel de montage final cut pro miniatures photoshop musiques epidemicsounds musique doutro faller ikhana collaboration commerciale produit recu gratuitement lien daffiliation je touche une petite commission si vous achetez via ce lien cette video nest pas en collaboration remuneree. | maquillage |
+
 # Système de Classification Automatique de Contenus Vidéo YouTube
 
 ## Description du Projet (Tâche)
